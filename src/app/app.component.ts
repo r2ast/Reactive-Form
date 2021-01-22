@@ -17,7 +17,8 @@ export class AppComponent implements OnInit {
   ngOnInit(){
     this.regForm = this.formBuilder.group({
       firstName:['', Validators.required],
-      lastName:['', Validators.required],
+      lastName: ['', Validators.required],
+      fathername: ['', Validators.required],
       email:['', [Validators.required, Validators.email]],
       password:['', [Validators.required, Validators.minLength(6)]]
     });
